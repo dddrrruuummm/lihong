@@ -1,0 +1,32 @@
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 18px;
+  margin-top: 17px;
+}
+
+.actions > .primary:global(.button) {
+  margin-top: 0;
+}
+
+.actions > .inquiry {
+  color: var(--gold);
+}
+
+.actions > .inquiry:hover {
+  color: var(--paper);
+}
+
+@media (max-width: 740px) {
+  .actions {
+    margin-top: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
